@@ -1,0 +1,19 @@
+# creation projet
+ng new my-first-project
+
+# Builds and serves your app, rebuilding on file changes.
+ng serve --open
+
+# Compiles an Angular app
+ng build my-app
+
+# création component
+ng g c heroes/form-hero
+
+# création service
+ng g service heroes/hero
+
+# version cli
+ng version
+
+https://angular.io/cli

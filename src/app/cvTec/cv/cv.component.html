@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-6 col-sd-3">
+        <app-list-cv (selectedPersonne)="selectPersonne($event)" [personnes]="personnes"></app-list-cv>
+    </div>
+
+    <div (selectedPersonne)="selectPersonne($event)" class="col-md-6 col-sd-9">
+        <app-detail-cv [personne]="selectedPersonne"></app-detail-cv >
+    </div>
+</div>
+
+<div class="row">
+<app-style></app-style>
+
+</div>
+
+<div class="row">
+  <app-for></app-for>
+
+</div>
+
+<div class="row">
+  <app-form-hero>
+
+  </app-form-hero>
+
+  </div>
+

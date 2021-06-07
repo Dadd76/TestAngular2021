@@ -4,12 +4,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { CvComponent } from './cvTec/cv/cv.component';
+import { ListCvComponent } from './cvTec/list-cv/list-cv.component';
+import { ItemCvComponent } from './cvTec/item-cv/item-cv.component';
+import { DetailCvComponent } from './cvTec/detail-cv/detail-cv.component';
+import { StyleComponent } from './directive/style/style.component';
+import { ForComponent } from './directive/for/for.component';
+import { FormHeroComponent } from './heroes/form-hero/form-hero.component';
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CvComponent,
+    ListCvComponent,
+    ItemCvComponent,
+    DetailCvComponent,
+    StyleComponent,
+    ForComponent,
+    FormHeroComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
