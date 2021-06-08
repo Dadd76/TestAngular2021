@@ -14,6 +14,7 @@ import { FormHeroComponent } from './heroes/form-hero/form-hero.component';
 import { HeroWithServiceComponent } from './heroes/hero-service/hero-service.component';
 import { FormsModule } from '@angular/forms';// <-- NgModel lives here
 import { MessageComponent } from './heroes/message/message.component';
+import { ClassComponent } from './directive/ngClass/class.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MessageComponent } from './heroes/message/message.component';
     ForComponent,
     FormHeroComponent,
     MessageComponent,
-    HeroWithServiceComponent
+    HeroWithServiceComponent,
+    ClassComponent
   ],
   imports: [
     BrowserModule,
