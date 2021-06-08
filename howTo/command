@@ -1,0 +1,7 @@
+#kill the process on port 4200
+
+netstat -a -n -o
+
+netstat -ano | findstr :4200
+
+taskkill -f /pid 18932

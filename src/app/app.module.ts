@@ -11,7 +11,9 @@ import { DetailCvComponent } from './cvTec/detail-cv/detail-cv.component';
 import { StyleComponent } from './directive/style/style.component';
 import { ForComponent } from './directive/for/for.component';
 import { FormHeroComponent } from './heroes/form-hero/form-hero.component';
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { HeroWithServiceComponent } from './heroes/hero-service/hero-service.component';
+import { FormsModule } from '@angular/forms';// <-- NgModel lives here
+import { MessageComponent } from './heroes/message/message.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
     DetailCvComponent,
     StyleComponent,
     ForComponent,
-    FormHeroComponent
+    FormHeroComponent,
+    MessageComponent,
+    HeroWithServiceComponent
   ],
   imports: [
     BrowserModule,

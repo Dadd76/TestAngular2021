@@ -1,19 +1,18 @@
-<p>for works! directive [ngFor]</p>
+<p>hero-service works!</p>
 
 <table class="table">
 <thead>
   <th scope="col">#</th>
   <th scope="col">Name</th>
   <th scope="col">Power</th>
-  <th scope="col">Name Uppercase</th>
+
 </thead>
 <tbody>
- <tr *ngFor="let hero of heroes">
+ <tr *ngFor="let hero of heroes" (click)="onSelect(hero)">
    <th scope="row">{{hero.id}}</th>
    <td>{{hero.name}}</td>
    <td>{{hero.power}}</td>
-   <!-- <td>{{hero.name | uppercase}}</td> -->
-   <td>{{hero.name }}</td>
+
  </tr>
 
 </tbody>
