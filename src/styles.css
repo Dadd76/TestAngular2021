@@ -2,6 +2,14 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 
-div.container {background-color: yellowgreen; margin: auto;  margin-top: 1em; padding: 1em;}
+div.container {background-color: whitesmoke; margin: auto;  margin-top: 1em; padding: 1em;}
 
 body {background-color: powderblue;}
+
+div.row{
+  margin-bottom: 1em;
+  padding: 1em;
+  border: 3px yellowgreen solid;
+  }
+
+
