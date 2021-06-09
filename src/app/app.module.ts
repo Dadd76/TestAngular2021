@@ -16,6 +16,8 @@ import { FormsModule } from '@angular/forms';// <-- NgModel lives here
 import { MessageComponent } from './heroes/message/message.component';
 import { ClassComponent } from './directive/ngClass/class.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialComponent } from './angularMaterial/angular-material.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -29,13 +31,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormHeroComponent,
     MessageComponent,
     HeroWithServiceComponent,
-    ClassComponent
+    ClassComponent,
+    AngularMaterialComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

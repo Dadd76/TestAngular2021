@@ -19,7 +19,6 @@ export class HeroWithServiceComponent implements OnInit {
 
   ngOnInit() {
   this.getHeroes();//test
-
   }
   getHeroes(): void {
     this.heroService.getHeroes()
