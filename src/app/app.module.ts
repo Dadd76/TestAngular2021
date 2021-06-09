@@ -15,6 +15,7 @@ import { HeroWithServiceComponent } from './heroes/hero-service/hero-service.com
 import { FormsModule } from '@angular/forms';// <-- NgModel lives here
 import { MessageComponent } from './heroes/message/message.component';
 import { ClassComponent } from './directive/ngClass/class.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ClassComponent } from './directive/ngClass/class.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
