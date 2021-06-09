@@ -1,16 +1,17 @@
-classRed{
+.classRed{
 background-color: red;
-color: white;
+color: black;
 }
 
-classBlue{
+.classBlue{
 background-color: blue;
-color: white;
+color: black;
+;
 
 }
 
 
-classPurple{
+.classPurple{
   background-color: purple;
-  color: white;
+  color: black;
   }

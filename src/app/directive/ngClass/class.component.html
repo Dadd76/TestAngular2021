@@ -1,1 +1,13 @@
-<p>class works!</p>
+<p [ngClass]="{
+  'classRed' : Red,
+  'classBlue' :Blue,
+  'classPurple' :Purple
+
+
+}">class works!</p>
+
+<button (click)="changecColor('red')">Red</button>
+<button (click)="changecColor('blue')">Blue</button>
+<button (click)="changecColor('')">Purple</button>
+
+
