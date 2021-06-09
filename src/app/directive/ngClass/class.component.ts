@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClassComponent implements OnInit {
 
-  Red = true;
-  Blue = false;
-  Purple = false;
+  cRed = true;
+  cBlue = false;
+  cPurple = false;
 
   constructor() { }
 
@@ -18,12 +18,26 @@ export class ClassComponent implements OnInit {
 
   changecColor(color : string)
   {
-  if(color == "red")
-    this.Red = true != this.Purple !=  this.Blue ;
-  else if(color == "blue")
-    this.Blue = true != this.Red != this.Purple;
-  else if(color=="purple")
-    this.Purple = true != this.Red != this.Blue;
+  console.log(color);
+
+  if(color == 'red')
+  {
+    this.cRed = true;
+    this.cPurple = false;
+    this.cBlue = false;
+  }
+    else if(color == 'blue')
+  {
+    this.cBlue = true;
+    this.cRed  = false;
+    this.cPurple = false;
+  }
+  else if(color=='purple')
+  {
+    this.cPurple = true;
+    this.cRed = false;
+    this.cBlue = false;
+  }
 
   }
 
