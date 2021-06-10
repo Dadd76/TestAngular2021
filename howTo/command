@@ -5,3 +5,9 @@ netstat -a -n -o
 netstat -ano | findstr :4200
 netstat -ano | findstr :4200
 taskkill -f /pid 18932
+
+#angular material : https://material.io/
+ng add @angular/material
+
+#material UI : https://material-ui.com/
+npm install @material-ui/core

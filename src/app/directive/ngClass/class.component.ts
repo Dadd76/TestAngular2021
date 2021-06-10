@@ -23,7 +23,7 @@ export class ClassComponent implements OnInit {
   if(color == 'red')
   {
     this.cRed = true;
-    this.cPurple = false;
+    this.cPurple = false
     this.cBlue = false;
   }
     else if(color == 'blue')

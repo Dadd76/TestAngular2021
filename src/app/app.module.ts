@@ -16,8 +16,10 @@ import { FormsModule } from '@angular/forms';// <-- NgModel lives here
 import { MessageComponent } from './heroes/message/message.component';
 import { ClassComponent } from './directive/ngClass/class.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularMaterialComponent } from './angularMaterial/angular-material.component';
+import { AngularMaterialComponent } from './angularMaterial/table/angular-material-table.component';
 import { MatTableModule } from '@angular/material/table';
+import { SoapComponent } from './soap/soap.component';
+import { HelloComponent } from './soap/hello.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { MatTableModule } from '@angular/material/table';
     MessageComponent,
     HeroWithServiceComponent,
     ClassComponent,
-    AngularMaterialComponent
+    AngularMaterialComponent,
+    SoapComponent,
+    HelloComponent
   ],
   imports: [
     BrowserModule,

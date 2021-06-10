@@ -1,7 +1,8 @@
-import { Component, OnInit, Output } from '@angular/core';
-import { HeroService } from '../heroes/service/hero.service';
-import { Hero } from '../model/Hero';
-
+import { Component, OnInit, Output,AfterViewInit, ViewChild } from '@angular/core';
+import { HeroService } from '../../heroes/service/hero.service';
+// import { Hero } from '../../model/Hero';
+import {MatPaginator} from '@angular/material/paginator';
+import {MatTableDataSource} from '@angular/material/table';
 
 export interface PeriodicElement {
   name: string;
@@ -25,18 +26,25 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 @Component({
   selector: 'app-angular-material',
-  templateUrl: './angular-material.component.html',
-  styleUrls: ['./angular-material.component.css']
+  templateUrl: './angular-material-table.component.html',
+  styleUrls: ['./angular-material-table.component.css']
 })
 export class AngularMaterialComponent implements OnInit {
 
-  dataSource = ELEMENT_DATA;
+  // dataSource = ELEMENT_DATA;
+  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+
   displayedColumns: string[] = ['demo-position', 'demo-name', 'demo-weight', 'demo-symbol'];
 
   columnsToDisplay = ['name', 'power'];
 
   constructor(private heroService: HeroService) { }
 
+  @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
+
+  ngAfterViewInit() {
+    // this.dataSource.paginator = this.paginator;
+  }
   ngOnInit(): void {
   }
 

@@ -3,7 +3,7 @@
     <app-list-cv (selectedPersonne)="selectPersonne($event)" [personnes]="personnes"></app-list-cv>
   </div>
 
-  <div (selectedPersonne)="selectPersonne($event)" class="col-md-6 col-sd-9">
+  <div *ngIf="selectedPersonne" (selectedPersonne)="selectPersonne($event)" class="col-md-6 col-sd-9">
     <app-detail-cv [personne]="selectedPersonne"></app-detail-cv>
   </div>
 </div>
@@ -20,7 +20,7 @@
 <div class="row">
   <app-ngclass>
 
-</app-ngclass>
+  </app-ngclass>
 </div>
 <div class="row">
   <app-form-hero>
@@ -37,3 +37,8 @@
 
   <app-angular-material></app-angular-material>
 </div>
+
+<div class="row">
+  <app-soap></app-soap>
+</div>
+
